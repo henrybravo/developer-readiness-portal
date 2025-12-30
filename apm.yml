@@ -1,0 +1,28 @@
+name: spec2cloud
+version: 1.1.0
+description: Skill-centric AI workflow - GitHub Copilot agents + skills from spec to cloud
+
+author: EmeaAppGbb
+maintainer: henrybravo
+repository: https://github.com/henrybravo/spec2cloud-agentskills
+upstream: https://github.com/EmeaAppGbb/spec2cloud
+# Fork note: Validating skill-centric refactor here; will upstream via PR after deep testing.
+license: MIT
+
+# APM dependencies replace git subtrees
+dependencies:
+  apm:
+    - EmeaAppGbb/spec2cloud-guidelines
+    - EmeaAppGbb/spec2cloud-guidelines-backend
+    - EmeaAppGbb/spec2cloud-guidelines-frontend
+
+
+
+# Workflow shortcuts - run with: apm run <script-name>
+scripts:
+  prd: "copilot --allow-tool -p .github/prompts/prd.prompt.md"
+  frd: "copilot --allow-tool -p .github/prompts/frd.prompt.md"
+  plan: "copilot --allow-tool -p .github/prompts/plan.prompt.md"
+  implement: "copilot --allow-tool -p .github/prompts/implement.prompt.md"
+  delegate: "copilot --allow-tool -p .github/prompts/delegate.prompt.md"
+  deploy: "copilot --allow-tool -p .github/prompts/deploy.prompt.md"
