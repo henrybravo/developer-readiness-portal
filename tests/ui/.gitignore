@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Test results
+test-results/
+playwright-report/
+junit-report.xml
+
+# Build outputs
+mcp-server/dist/
+
+# Playwright
+playwright/.cache/
+.playwright/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

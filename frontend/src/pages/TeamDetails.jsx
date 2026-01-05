@@ -149,7 +149,7 @@ function TeamDetails() {
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-8">
-          <Link to="/" className="inline-flex items-center px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gold-dark hover:text-gold-dark font-semibold rounded-lg transition-colors shadow-sm">
+          <Link to="/" className="inline-flex items-center px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gold-dark hover:text-gold-dark font-semibold rounded-lg transition-colors shadow-sm" data-testid="back-link">
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
@@ -189,7 +189,7 @@ function TeamDetails() {
 
       {/* Save/Cancel Bar */}
       {hasChanges && (
-        <div className="sticky top-0 z-10 bg-gold-light border-2 border-gold rounded-2xl p-6 mb-8 flex items-center justify-between shadow-lg">
+        <div className="sticky top-0 z-10 bg-gold-light border-2 border-gold rounded-2xl p-6 mb-8 flex items-center justify-between shadow-lg" data-testid="unsaved-changes-bar">
           <div className="flex items-center">
             <svg className="w-6 h-6 text-gold-dark mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -201,6 +201,7 @@ function TeamDetails() {
               onClick={handleCancel}
               disabled={saving}
               className="px-6 py-2.5 bg-white text-gray-700 font-medium border-2 border-gray-300 rounded-md hover:bg-gray-50 transition-colors disabled:opacity-50"
+              data-testid="cancel-btn"
             >
               Cancel
             </button>
@@ -208,6 +209,7 @@ function TeamDetails() {
               onClick={handleSave}
               disabled={saving}
               className="px-6 py-2.5 bg-gold-dark text-white font-bold rounded-md hover:bg-gold transition-colors disabled:opacity-50 flex items-center shadow-md"
+              data-testid="save-btn"
             >
               {saving ? (
                 <>

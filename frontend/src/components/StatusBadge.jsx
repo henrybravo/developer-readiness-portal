@@ -28,7 +28,11 @@ function StatusBadge({ status }) {
   };
 
   return (
-    <span className={`inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold border-2 shadow-sm ${getStatusStyles()}`}>
+    <span 
+      className={`inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold border-2 shadow-sm ${getStatusStyles()}`}
+      data-testid="status-badge"
+      data-status={getStatusText().toLowerCase()}
+    >
       <span className="w-2.5 h-2.5 rounded-full mr-2 bg-current"></span>
       {getStatusText()}
     </span>

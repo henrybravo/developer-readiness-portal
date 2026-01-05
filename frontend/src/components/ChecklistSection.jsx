@@ -52,10 +52,11 @@ function ChecklistSection({ title, items, onItemToggle, categoryKey }) {
   const percentage = Math.round((completedCount / items.length) * 100);
 
   return (
-    <div className="border-2 border-gray-200 rounded-2xl overflow-hidden shadow-md">
+    <div className="border-2 border-gray-200 rounded-2xl overflow-hidden shadow-md" data-testid={`checklist-${categoryKey}`}>
       <button
         onClick={() => setExpanded(!expanded)}
         className="w-full px-8 py-5 bg-gray-50 hover:bg-gray-100 transition-colors flex items-center justify-between"
+        data-testid={`toggle-${categoryKey}`}
       >
         <div className="flex items-center space-x-4">
           <div className="text-gray-600">
@@ -105,6 +106,7 @@ function ChecklistSection({ title, items, onItemToggle, categoryKey }) {
                 checked={item.isComplete}
                 onChange={() => onItemToggle(categoryKey, index)}
                 className="mt-1 h-6 w-6 text-gold-dark rounded border-gray-300 focus:ring-2 focus:ring-gold focus:ring-offset-2 cursor-pointer"
+                data-testid={`checkbox-${categoryKey}-${index}`}
               />
               <div className="flex-1 min-w-0">
                 <label className={`block text-base font-semibold cursor-pointer ${

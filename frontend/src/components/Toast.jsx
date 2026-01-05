@@ -24,7 +24,7 @@ function Toast({ message, type = 'success', duration = 3000, onClose }) {
   const iconColor = type === 'success' ? 'text-green-600' : 'text-red-600';
 
   return (
-    <div className={`fixed top-6 right-6 max-w-md z-50 animate-slideIn`}>
+    <div className={`fixed top-6 right-6 max-w-md z-50 animate-slideIn`} data-testid="toast" data-toast-type={type}>
       <div className={`${bgColor} border ${borderColor} rounded-lg p-4 shadow-lg flex items-start space-x-3`}>
         <div className={`flex-shrink-0 pt-0.5`}>
           {type === 'success' ? (

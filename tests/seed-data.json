@@ -1,0 +1,822 @@
+[
+  {
+    "id": "team-alpha",
+    "name": "Team Alpha - E-Commerce Platform",
+    "stack": {
+      "frontend": ".NET 6",
+      "backend": "React 16",
+      "database": "PostgreSQL 12"
+    },
+    "readiness": 0,
+    "checklist": {
+      "codebase": [
+        {
+          "id": "codebase-1",
+          "description": "Code follows consistent style guidelines",
+          "isComplete": true,
+          "guidance": "Use EditorConfig or Prettier for automatic formatting"
+        },
+        {
+          "id": "codebase-2",
+          "description": "No code smells or major technical debt",
+          "isComplete": true,
+          "guidance": "Run static analysis tools like SonarQube"
+        },
+        {
+          "id": "codebase-3",
+          "description": "Codebase is modular and maintainable",
+          "isComplete": false,
+          "guidance": "Follow SOLID principles and design patterns"
+        },
+        {
+          "id": "codebase-4",
+          "description": "Naming conventions are clear and consistent",
+          "isComplete": false,
+          "guidance": "Use meaningful names that describe purpose"
+        },
+        {
+          "id": "codebase-5",
+          "description": "Code comments explain complex logic",
+          "isComplete": false,
+          "guidance": "Focus on \u0027why\u0027 rather than \u0027what\u0027"
+        }
+      ],
+      "versioning": [
+        {
+          "id": "versioning-1",
+          "description": "All dependencies are up to date",
+          "isComplete": true,
+          "guidance": "Check for security vulnerabilities and breaking changes"
+        },
+        {
+          "id": "versioning-2",
+          "description": "Using semantic versioning for releases",
+          "isComplete": true,
+          "guidance": "Follow major.minor.patch versioning scheme"
+        },
+        {
+          "id": "versioning-3",
+          "description": "Lock files are committed to repository",
+          "isComplete": false,
+          "guidance": "Ensures consistent dependency versions across environments"
+        },
+        {
+          "id": "versioning-4",
+          "description": "Dependency security scanning enabled",
+          "isComplete": false,
+          "guidance": "Use tools like Dependabot or Snyk"
+        },
+        {
+          "id": "versioning-5",
+          "description": "No deprecated dependencies in use",
+          "isComplete": false,
+          "guidance": "Plan migration path for deprecated packages"
+        }
+      ],
+      "documentation": [
+        {
+          "id": "documentation-1",
+          "description": "README with setup instructions exists",
+          "isComplete": true,
+          "guidance": "Include prerequisites, installation, and quick start"
+        },
+        {
+          "id": "documentation-2",
+          "description": "API documentation is current",
+          "isComplete": false,
+          "guidance": "Use tools like Swagger, JSDoc, or XML comments"
+        },
+        {
+          "id": "documentation-3",
+          "description": "Architecture diagrams are available",
+          "isComplete": false,
+          "guidance": "Document high-level system design and data flow"
+        },
+        {
+          "id": "documentation-4",
+          "description": "Runbooks for common operations exist",
+          "isComplete": false,
+          "guidance": "Include troubleshooting and deployment procedures"
+        },
+        {
+          "id": "documentation-5",
+          "description": "Code has inline documentation",
+          "isComplete": false,
+          "guidance": "Document public APIs and complex algorithms"
+        }
+      ],
+      "testing": [
+        {
+          "id": "testing-1",
+          "description": "Unit tests cover critical paths",
+          "isComplete": true,
+          "guidance": "Aim for 80%\u002B code coverage on business logic"
+        },
+        {
+          "id": "testing-2",
+          "description": "Integration tests verify key workflows",
+          "isComplete": false,
+          "guidance": "Test interactions between system components"
+        },
+        {
+          "id": "testing-3",
+          "description": "E2E tests validate user scenarios",
+          "isComplete": false,
+          "guidance": "Use tools like Playwright or Cypress"
+        },
+        {
+          "id": "testing-4",
+          "description": "Tests run automatically in CI/CD",
+          "isComplete": false,
+          "guidance": "Integrate with GitHub Actions or similar"
+        },
+        {
+          "id": "testing-5",
+          "description": "Test data management strategy exists",
+          "isComplete": false,
+          "guidance": "Use factories, fixtures, or seed data"
+        }
+      ],
+      "copilot": [
+        {
+          "id": "copilot-1",
+          "description": "GitHub Copilot licenses assigned to team",
+          "isComplete": false,
+          "guidance": "Ensure all developers have access"
+        },
+        {
+          "id": "copilot-2",
+          "description": "Team trained on Copilot best practices",
+          "isComplete": false,
+          "guidance": "Conduct workshops or share resources"
+        },
+        {
+          "id": "copilot-3",
+          "description": "Copilot used for unit test generation",
+          "isComplete": false,
+          "guidance": "Leverage AI to write comprehensive test cases"
+        },
+        {
+          "id": "copilot-4",
+          "description": "Code review includes Copilot suggestions",
+          "isComplete": false,
+          "guidance": "Validate AI-generated code during reviews"
+        },
+        {
+          "id": "copilot-5",
+          "description": "Team shares Copilot tips and tricks",
+          "isComplete": false,
+          "guidance": "Build internal knowledge base"
+        }
+      ],
+      "modernization": [
+        {
+          "id": "modernization-1",
+          "description": "Framework versions are current",
+          "isComplete": true,
+          "guidance": "Running latest stable versions of core frameworks"
+        },
+        {
+          "id": "modernization-2",
+          "description": "Using modern language features",
+          "isComplete": false,
+          "guidance": "Leverage async/await, pattern matching, etc."
+        },
+        {
+          "id": "modernization-3",
+          "description": "Cloud-ready architecture",
+          "isComplete": false,
+          "guidance": "Stateless services, externalized config, health checks"
+        },
+        {
+          "id": "modernization-4",
+          "description": "Containerization implemented",
+          "isComplete": false,
+          "guidance": "Application runs in Docker containers"
+        },
+        {
+          "id": "modernization-5",
+          "description": "Infrastructure as code adopted",
+          "isComplete": false,
+          "guidance": "Use Terraform, Bicep, or similar tools"
+        }
+      ]
+    },
+    "description": "Legacy e-commerce platform requiring modernization"
+  },
+  {
+    "id": "team-beta",
+    "name": "Team Beta - Customer Portal",
+    "stack": {
+      "frontend": "React 18",
+      "backend": "Java 11",
+      "database": "MongoDB 5"
+    },
+    "readiness": 1,
+    "checklist": {
+      "codebase": [
+        {
+          "id": "codebase-1",
+          "description": "Code follows consistent style guidelines",
+          "isComplete": false,
+          "guidance": "Use EditorConfig or Prettier for automatic formatting"
+        },
+        {
+          "id": "codebase-2",
+          "description": "No code smells or major technical debt",
+          "isComplete": false,
+          "guidance": "Run static analysis tools like SonarQube"
+        },
+        {
+          "id": "codebase-3",
+          "description": "Codebase is modular and maintainable",
+          "isComplete": true,
+          "guidance": "Follow SOLID principles and design patterns"
+        },
+        {
+          "id": "codebase-4",
+          "description": "Naming conventions are clear and consistent",
+          "isComplete": false,
+          "guidance": "Use meaningful names that describe purpose"
+        },
+        {
+          "id": "codebase-5",
+          "description": "Code comments explain complex logic",
+          "isComplete": false,
+          "guidance": "Focus on \u0027why\u0027 rather than \u0027what\u0027"
+        }
+      ],
+      "versioning": [
+        {
+          "id": "versioning-1",
+          "description": "All dependencies are up to date",
+          "isComplete": false,
+          "guidance": "Check for security vulnerabilities and breaking changes"
+        },
+        {
+          "id": "versioning-2",
+          "description": "Using semantic versioning for releases",
+          "isComplete": true,
+          "guidance": "Follow major.minor.patch versioning scheme"
+        },
+        {
+          "id": "versioning-3",
+          "description": "Lock files are committed to repository",
+          "isComplete": false,
+          "guidance": "Ensures consistent dependency versions across environments"
+        },
+        {
+          "id": "versioning-4",
+          "description": "Dependency security scanning enabled",
+          "isComplete": false,
+          "guidance": "Use tools like Dependabot or Snyk"
+        },
+        {
+          "id": "versioning-5",
+          "description": "No deprecated dependencies in use",
+          "isComplete": false,
+          "guidance": "Plan migration path for deprecated packages"
+        }
+      ],
+      "documentation": [
+        {
+          "id": "documentation-1",
+          "description": "README with setup instructions exists",
+          "isComplete": true,
+          "guidance": "Include prerequisites, installation, and quick start"
+        },
+        {
+          "id": "documentation-2",
+          "description": "API documentation is current",
+          "isComplete": true,
+          "guidance": "Use tools like Swagger, JSDoc, or XML comments"
+        },
+        {
+          "id": "documentation-3",
+          "description": "Architecture diagrams are available",
+          "isComplete": true,
+          "guidance": "Document high-level system design and data flow"
+        },
+        {
+          "id": "documentation-4",
+          "description": "Runbooks for common operations exist",
+          "isComplete": false,
+          "guidance": "Include troubleshooting and deployment procedures"
+        },
+        {
+          "id": "documentation-5",
+          "description": "Code has inline documentation",
+          "isComplete": false,
+          "guidance": "Document public APIs and complex algorithms"
+        }
+      ],
+      "testing": [
+        {
+          "id": "testing-1",
+          "description": "Unit tests cover critical paths",
+          "isComplete": true,
+          "guidance": "Aim for 80%\u002B code coverage on business logic"
+        },
+        {
+          "id": "testing-2",
+          "description": "Integration tests verify key workflows",
+          "isComplete": true,
+          "guidance": "Test interactions between system components"
+        },
+        {
+          "id": "testing-3",
+          "description": "E2E tests validate user scenarios",
+          "isComplete": true,
+          "guidance": "Use tools like Playwright or Cypress"
+        },
+        {
+          "id": "testing-4",
+          "description": "Tests run automatically in CI/CD",
+          "isComplete": true,
+          "guidance": "Integrate with GitHub Actions or similar"
+        },
+        {
+          "id": "testing-5",
+          "description": "Test data management strategy exists",
+          "isComplete": false,
+          "guidance": "Use factories, fixtures, or seed data"
+        }
+      ],
+      "copilot": [
+        {
+          "id": "copilot-1",
+          "description": "GitHub Copilot licenses assigned to team",
+          "isComplete": true,
+          "guidance": "Ensure all developers have access"
+        },
+        {
+          "id": "copilot-2",
+          "description": "Team trained on Copilot best practices",
+          "isComplete": true,
+          "guidance": "Conduct workshops or share resources"
+        },
+        {
+          "id": "copilot-3",
+          "description": "Copilot used for unit test generation",
+          "isComplete": false,
+          "guidance": "Leverage AI to write comprehensive test cases"
+        },
+        {
+          "id": "copilot-4",
+          "description": "Code review includes Copilot suggestions",
+          "isComplete": false,
+          "guidance": "Validate AI-generated code during reviews"
+        },
+        {
+          "id": "copilot-5",
+          "description": "Team shares Copilot tips and tricks",
+          "isComplete": false,
+          "guidance": "Build internal knowledge base"
+        }
+      ],
+      "modernization": [
+        {
+          "id": "modernization-1",
+          "description": "Framework versions are current",
+          "isComplete": true,
+          "guidance": "Running latest stable versions of core frameworks"
+        },
+        {
+          "id": "modernization-2",
+          "description": "Using modern language features",
+          "isComplete": true,
+          "guidance": "Leverage async/await, pattern matching, etc."
+        },
+        {
+          "id": "modernization-3",
+          "description": "Cloud-ready architecture",
+          "isComplete": true,
+          "guidance": "Stateless services, externalized config, health checks"
+        },
+        {
+          "id": "modernization-4",
+          "description": "Containerization implemented",
+          "isComplete": false,
+          "guidance": "Application runs in Docker containers"
+        },
+        {
+          "id": "modernization-5",
+          "description": "Infrastructure as code adopted",
+          "isComplete": false,
+          "guidance": "Use Terraform, Bicep, or similar tools"
+        }
+      ]
+    },
+    "description": "Modern customer-facing portal with good practices"
+  },
+  {
+    "id": "team-gamma",
+    "name": "Team Gamma - Internal Tools",
+    "stack": {
+      "frontend": "React 18",
+      "backend": ".NET 8",
+      "database": "Redis 7"
+    },
+    "readiness": 2,
+    "checklist": {
+      "codebase": [
+        {
+          "id": "codebase-1",
+          "description": "Code follows consistent style guidelines",
+          "isComplete": true,
+          "guidance": "Use EditorConfig or Prettier for automatic formatting"
+        },
+        {
+          "id": "codebase-2",
+          "description": "No code smells or major technical debt",
+          "isComplete": true,
+          "guidance": "Run static analysis tools like SonarQube"
+        },
+        {
+          "id": "codebase-3",
+          "description": "Codebase is modular and maintainable",
+          "isComplete": true,
+          "guidance": "Follow SOLID principles and design patterns"
+        },
+        {
+          "id": "codebase-4",
+          "description": "Naming conventions are clear and consistent",
+          "isComplete": true,
+          "guidance": "Use meaningful names that describe purpose"
+        },
+        {
+          "id": "codebase-5",
+          "description": "Code comments explain complex logic",
+          "isComplete": true,
+          "guidance": "Focus on \u0027why\u0027 rather than \u0027what\u0027"
+        }
+      ],
+      "versioning": [
+        {
+          "id": "versioning-1",
+          "description": "All dependencies are up to date",
+          "isComplete": false,
+          "guidance": "Check for security vulnerabilities and breaking changes"
+        },
+        {
+          "id": "versioning-2",
+          "description": "Using semantic versioning for releases",
+          "isComplete": false,
+          "guidance": "Follow major.minor.patch versioning scheme"
+        },
+        {
+          "id": "versioning-3",
+          "description": "Lock files are committed to repository",
+          "isComplete": true,
+          "guidance": "Ensures consistent dependency versions across environments"
+        },
+        {
+          "id": "versioning-4",
+          "description": "Dependency security scanning enabled",
+          "isComplete": true,
+          "guidance": "Use tools like Dependabot or Snyk"
+        },
+        {
+          "id": "versioning-5",
+          "description": "No deprecated dependencies in use",
+          "isComplete": false,
+          "guidance": "Plan migration path for deprecated packages"
+        }
+      ],
+      "documentation": [
+        {
+          "id": "documentation-1",
+          "description": "README with setup instructions exists",
+          "isComplete": true,
+          "guidance": "Include prerequisites, installation, and quick start"
+        },
+        {
+          "id": "documentation-2",
+          "description": "API documentation is current",
+          "isComplete": true,
+          "guidance": "Use tools like Swagger, JSDoc, or XML comments"
+        },
+        {
+          "id": "documentation-3",
+          "description": "Architecture diagrams are available",
+          "isComplete": true,
+          "guidance": "Document high-level system design and data flow"
+        },
+        {
+          "id": "documentation-4",
+          "description": "Runbooks for common operations exist",
+          "isComplete": true,
+          "guidance": "Include troubleshooting and deployment procedures"
+        },
+        {
+          "id": "documentation-5",
+          "description": "Code has inline documentation",
+          "isComplete": true,
+          "guidance": "Document public APIs and complex algorithms"
+        }
+      ],
+      "testing": [
+        {
+          "id": "testing-1",
+          "description": "Unit tests cover critical paths",
+          "isComplete": true,
+          "guidance": "Aim for 80%\u002B code coverage on business logic"
+        },
+        {
+          "id": "testing-2",
+          "description": "Integration tests verify key workflows",
+          "isComplete": true,
+          "guidance": "Test interactions between system components"
+        },
+        {
+          "id": "testing-3",
+          "description": "E2E tests validate user scenarios",
+          "isComplete": true,
+          "guidance": "Use tools like Playwright or Cypress"
+        },
+        {
+          "id": "testing-4",
+          "description": "Tests run automatically in CI/CD",
+          "isComplete": true,
+          "guidance": "Integrate with GitHub Actions or similar"
+        },
+        {
+          "id": "testing-5",
+          "description": "Test data management strategy exists",
+          "isComplete": false,
+          "guidance": "Use factories, fixtures, or seed data"
+        }
+      ],
+      "copilot": [
+        {
+          "id": "copilot-1",
+          "description": "GitHub Copilot licenses assigned to team",
+          "isComplete": true,
+          "guidance": "Ensure all developers have access"
+        },
+        {
+          "id": "copilot-2",
+          "description": "Team trained on Copilot best practices",
+          "isComplete": true,
+          "guidance": "Conduct workshops or share resources"
+        },
+        {
+          "id": "copilot-3",
+          "description": "Copilot used for unit test generation",
+          "isComplete": true,
+          "guidance": "Leverage AI to write comprehensive test cases"
+        },
+        {
+          "id": "copilot-4",
+          "description": "Code review includes Copilot suggestions",
+          "isComplete": true,
+          "guidance": "Validate AI-generated code during reviews"
+        },
+        {
+          "id": "copilot-5",
+          "description": "Team shares Copilot tips and tricks",
+          "isComplete": true,
+          "guidance": "Build internal knowledge base"
+        }
+      ],
+      "modernization": [
+        {
+          "id": "modernization-1",
+          "description": "Framework versions are current",
+          "isComplete": true,
+          "guidance": "Running latest stable versions of core frameworks"
+        },
+        {
+          "id": "modernization-2",
+          "description": "Using modern language features",
+          "isComplete": true,
+          "guidance": "Leverage async/await, pattern matching, etc."
+        },
+        {
+          "id": "modernization-3",
+          "description": "Cloud-ready architecture",
+          "isComplete": true,
+          "guidance": "Stateless services, externalized config, health checks"
+        },
+        {
+          "id": "modernization-4",
+          "description": "Containerization implemented",
+          "isComplete": true,
+          "guidance": "Application runs in Docker containers"
+        },
+        {
+          "id": "modernization-5",
+          "description": "Infrastructure as code adopted",
+          "isComplete": true,
+          "guidance": "Use Terraform, Bicep, or similar tools"
+        }
+      ]
+    },
+    "description": "Greenfield internal tools with modern stack"
+  },
+  {
+    "id": "team-delta",
+    "name": "Team Delta - Analytics Dashboard",
+    "stack": {
+      "frontend": "Angular 14",
+      "backend": "Java 6",
+      "database": "MySQL 5.7"
+    },
+    "readiness": 1,
+    "checklist": {
+      "codebase": [
+        {
+          "id": "codebase-1",
+          "description": "Code follows consistent style guidelines",
+          "isComplete": true,
+          "guidance": "Use EditorConfig or Prettier for automatic formatting"
+        },
+        {
+          "id": "codebase-2",
+          "description": "No code smells or major technical debt",
+          "isComplete": true,
+          "guidance": "Run static analysis tools like SonarQube"
+        },
+        {
+          "id": "codebase-3",
+          "description": "Codebase is modular and maintainable",
+          "isComplete": true,
+          "guidance": "Follow SOLID principles and design patterns"
+        },
+        {
+          "id": "codebase-4",
+          "description": "Naming conventions are clear and consistent",
+          "isComplete": true,
+          "guidance": "Use meaningful names that describe purpose"
+        },
+        {
+          "id": "codebase-5",
+          "description": "Code comments explain complex logic",
+          "isComplete": false,
+          "guidance": "Focus on \u0027why\u0027 rather than \u0027what\u0027"
+        }
+      ],
+      "versioning": [
+        {
+          "id": "versioning-1",
+          "description": "All dependencies are up to date",
+          "isComplete": true,
+          "guidance": "Check for security vulnerabilities and breaking changes"
+        },
+        {
+          "id": "versioning-2",
+          "description": "Using semantic versioning for releases",
+          "isComplete": true,
+          "guidance": "Follow major.minor.patch versioning scheme"
+        },
+        {
+          "id": "versioning-3",
+          "description": "Lock files are committed to repository",
+          "isComplete": false,
+          "guidance": "Ensures consistent dependency versions across environments"
+        },
+        {
+          "id": "versioning-4",
+          "description": "Dependency security scanning enabled",
+          "isComplete": false,
+          "guidance": "Use tools like Dependabot or Snyk"
+        },
+        {
+          "id": "versioning-5",
+          "description": "No deprecated dependencies in use",
+          "isComplete": false,
+          "guidance": "Plan migration path for deprecated packages"
+        }
+      ],
+      "documentation": [
+        {
+          "id": "documentation-1",
+          "description": "README with setup instructions exists",
+          "isComplete": true,
+          "guidance": "Include prerequisites, installation, and quick start"
+        },
+        {
+          "id": "documentation-2",
+          "description": "API documentation is current",
+          "isComplete": true,
+          "guidance": "Use tools like Swagger, JSDoc, or XML comments"
+        },
+        {
+          "id": "documentation-3",
+          "description": "Architecture diagrams are available",
+          "isComplete": true,
+          "guidance": "Document high-level system design and data flow"
+        },
+        {
+          "id": "documentation-4",
+          "description": "Runbooks for common operations exist",
+          "isComplete": false,
+          "guidance": "Include troubleshooting and deployment procedures"
+        },
+        {
+          "id": "documentation-5",
+          "description": "Code has inline documentation",
+          "isComplete": false,
+          "guidance": "Document public APIs and complex algorithms"
+        }
+      ],
+      "testing": [
+        {
+          "id": "testing-1",
+          "description": "Unit tests cover critical paths",
+          "isComplete": true,
+          "guidance": "Aim for 80%\u002B code coverage on business logic"
+        },
+        {
+          "id": "testing-2",
+          "description": "Integration tests verify key workflows",
+          "isComplete": true,
+          "guidance": "Test interactions between system components"
+        },
+        {
+          "id": "testing-3",
+          "description": "E2E tests validate user scenarios",
+          "isComplete": true,
+          "guidance": "Use tools like Playwright or Cypress"
+        },
+        {
+          "id": "testing-4",
+          "description": "Tests run automatically in CI/CD",
+          "isComplete": false,
+          "guidance": "Integrate with GitHub Actions or similar"
+        },
+        {
+          "id": "testing-5",
+          "description": "Test data management strategy exists",
+          "isComplete": false,
+          "guidance": "Use factories, fixtures, or seed data"
+        }
+      ],
+      "copilot": [
+        {
+          "id": "copilot-1",
+          "description": "GitHub Copilot licenses assigned to team",
+          "isComplete": true,
+          "guidance": "Ensure all developers have access"
+        },
+        {
+          "id": "copilot-2",
+          "description": "Team trained on Copilot best practices",
+          "isComplete": true,
+          "guidance": "Conduct workshops or share resources"
+        },
+        {
+          "id": "copilot-3",
+          "description": "Copilot used for unit test generation",
+          "isComplete": false,
+          "guidance": "Leverage AI to write comprehensive test cases"
+        },
+        {
+          "id": "copilot-4",
+          "description": "Code review includes Copilot suggestions",
+          "isComplete": false,
+          "guidance": "Validate AI-generated code during reviews"
+        },
+        {
+          "id": "copilot-5",
+          "description": "Team shares Copilot tips and tricks",
+          "isComplete": false,
+          "guidance": "Build internal knowledge base"
+        }
+      ],
+      "modernization": [
+        {
+          "id": "modernization-1",
+          "description": "Framework versions are current",
+          "isComplete": true,
+          "guidance": "Running latest stable versions of core frameworks"
+        },
+        {
+          "id": "modernization-2",
+          "description": "Using modern language features",
+          "isComplete": true,
+          "guidance": "Leverage async/await, pattern matching, etc."
+        },
+        {
+          "id": "modernization-3",
+          "description": "Cloud-ready architecture",
+          "isComplete": false,
+          "guidance": "Stateless services, externalized config, health checks"
+        },
+        {
+          "id": "modernization-4",
+          "description": "Containerization implemented",
+          "isComplete": false,
+          "guidance": "Application runs in Docker containers"
+        },
+        {
+          "id": "modernization-5",
+          "description": "Infrastructure as code adopted",
+          "isComplete": false,
+          "guidance": "Use Terraform, Bicep, or similar tools"
+        }
+      ]
+    },
+    "description": "Analytics platform on legacy stack needing upgrades"
+  }
+]

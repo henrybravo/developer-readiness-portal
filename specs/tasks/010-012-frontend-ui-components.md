@@ -452,12 +452,12 @@ dotnet run
 ```bash
 cd frontend
 npm install
-npm run dev
-# Frontend available at http://localhost:3000
+npm run preview
+# Frontend available at http://localhost:4173/
 ```
 
 ### Access Application
-- Open browser to `http://localhost:3000`
+- Open browser to `http://localhost:4173/`
 - View teams overview
 - Click any team to see details
 - Toggle checklist items and save
