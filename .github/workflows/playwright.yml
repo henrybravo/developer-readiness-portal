@@ -25,10 +25,13 @@ env:
   NODE_VERSION: '20'
 
 jobs:
-  test:
+  playwright:
     timeout-minutes: 30
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: read
+      checks: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -95,7 +98,7 @@ jobs:
       - name: Start backend server
         working-directory: backend
         run: |
-          dotnet run &
+          dotnet run --urls http://localhost:5000 &
           echo "Waiting for backend to start..."
           timeout 60 bash -c 'until curl -s http://localhost:5000/api/teams > /dev/null; do sleep 1; done'
           echo "Backend is ready!"
