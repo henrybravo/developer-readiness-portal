@@ -99,19 +99,9 @@ export default defineConfig({
     },
   ],
 
-  /* Run local dev server before starting the tests (only in CI) */
-  webServer: process.env.CI ? [
-    {
-      command: 'cd ../../backend && dotnet run --urls http://localhost:5000',
-      url: 'http://localhost:5000/api/teams',
-      reuseExistingServer: true,
-      timeout: 60000,
-    },
-    {
-      command: 'cd ../../frontend && npm run preview',
-      url: 'http://localhost:4173',
-      reuseExistingServer: true,
-      timeout: 30000,
-    },
-  ] : undefined,
+  /*
+   * Web servers are managed externally:
+   * - CI: GitHub Actions workflow starts servers before running tests
+   * - Local: Start servers manually before running tests
+   */
 });
