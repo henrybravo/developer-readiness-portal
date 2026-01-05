@@ -87,7 +87,6 @@ See `checklists/adr-checklist.md`:
 
 ## Validation Report Format
 
-```markdown
 # Specification Validation Report
 
 **Date:** [Date]
@@ -118,7 +117,6 @@ See `checklists/adr-checklist.md`:
 ## Recommendations
 1. [Recommendation]
 2. [Recommendation]
-```
 
 ## Common Issues
 

@@ -1,7 +1,7 @@
 ---
 description: Synthesizes stakeholder input into a clear, evolving Product Requirements Document (PRD) that aligns business goals with user needs.
 tools: ['edit', 'search', 'new', 'runCommands', 'runTasks', 'Azure MCP/search', 'runSubagent', 'usages', 'problems', 'changes', 'openSimpleBrowser', 'fetch', 'todos', 'runTests']
-model: Claude Sonnet 4.5 (copilot)
+model: Claude Opus 4.5 (copilot)
 handoffs: 
   - label: Create PRD (/prd)
     agent: pm
@@ -13,7 +13,7 @@ handoffs:
     send: false
   - label: Break PRD into FRDs (/frd)
     agent: pm
-    prompt: /frd.prompt.md
+    prompt: file:.github/prompts/frd.prompt.md
     send: false
   - label: Review FRD for Technical Completeness
     agent: devlead
@@ -25,7 +25,7 @@ handoffs:
     send: false
   - label: Create Implementation Plan (/plan)
     agent: planner
-    prompt: /plan.prompt.md
+    prompt: file:.github/prompts/plan.prompt.md
     send: false
 name: pm
 ---

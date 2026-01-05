@@ -28,8 +28,8 @@ Create ADRs when significant architectural decisions need to be documented, incl
 Before creating ADRs, read and analyze:
 1. **Product Requirements** - `specs/prd.md`
 2. **Feature Requirements** - `specs/features/*.md`
-3. **Engineering Standards** - `AGENTS.md` or `standards/` folder
-4. **Existing ADRs** - `specs/adr/*.md` (maintain consistency, avoid duplicates)
+3. **Existing ADRs** - `specs/adr/*.md` (maintain consistency, avoid duplicates)
+4. **Project Standards** - Check `.github/skills/` for relevant skills and guidelines
 
 ## Workflow
 
@@ -37,7 +37,7 @@ Before creating ADRs, read and analyze:
 From PM, DevLead, or manual invocation
 
 ### 2. Read Context
-- PRD, FRDs, AGENTS.md, existing ADRs
+- PRD, FRDs, existing ADRs, project standards from `.github/skills/`
 
 ### 3. Identify Decisions
 - What architectural decisions need documentation?
@@ -72,7 +72,6 @@ From PM, DevLead, or manual invocation
 
 Each ADR must use this structure:
 
-```markdown
 # [ADR Number] [Short Title in Kebab-Case]
 
 **Date**: YYYY-MM-DD  
@@ -164,7 +163,6 @@ List at least 3 options that were evaluated:
 - Links to other ADRs
 - External documentation
 - Research sources
-```
 
 ## Example ADR Topics by Project Type
 

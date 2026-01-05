@@ -148,7 +148,7 @@ jobs:
           
           ## Learn More
           
-          https://github.com/EmeaAppGbb/spec2cloud
+          https://github.com/henrybravo/spec2cloud-agentskills
           EOF
           
           cp LICENSE.md release-minimal/
@@ -193,7 +193,7 @@ jobs:
             **Full Installation** (Recommended)
             Includes agents, prompts, devcontainer, MCP servers, and installation scripts:
             ```bash
-            curl -L https://github.com/EmeaAppGbb/spec2cloud/releases/download/${{ steps.version.outputs.VERSION }}/spec2cloud-full-${{ steps.version.outputs.VERSION }}.zip -o spec2cloud.zip
+            curl -L https://github.com/henrybravo/spec2cloud-agentskills/releases/download/${{ steps.version.outputs.VERSION }}/spec2cloud-full-${{ steps.version.outputs.VERSION }}.zip -o spec2cloud.zip
             unzip spec2cloud.zip -d spec2cloud
             cd spec2cloud
             ./scripts/install.sh --full
@@ -202,14 +202,14 @@ jobs:
             **Minimal Installation**
             Includes only agents and prompts:
             ```bash
-            curl -L https://github.com/EmeaAppGbb/spec2cloud/releases/download/${{ steps.version.outputs.VERSION }}/spec2cloud-minimal-${{ steps.version.outputs.VERSION }}.zip -o spec2cloud-minimal.zip
+            curl -L https://github.com/henrybravo/spec2cloud-agentskills/releases/download/${{ steps.version.outputs.VERSION }}/spec2cloud-minimal-${{ steps.version.outputs.VERSION }}.zip -o spec2cloud-minimal.zip
             unzip spec2cloud-minimal.zip -d spec2cloud-minimal
             cp -r spec2cloud-minimal/.github /path/to/your/project/
             ```
             
             **Quick Install** (One-liner)
             ```bash
-            curl -fsSL https://raw.githubusercontent.com/EmeaAppGbb/spec2cloud/main/scripts/quick-install.sh | bash
+            curl -fsSL https://raw.githubusercontent.com/henrybravo/spec2cloud-agentskills/main/scripts/quick-install.sh | bash
             ```
             
             ### 📋 What's Included
@@ -236,13 +236,13 @@ jobs:
             
             ### 📖 Documentation
             
-            - [Integration Guide](https://github.com/EmeaAppGbb/spec2cloud/blob/main/INTEGRATION.md)
-            - [Full Documentation](https://github.com/EmeaAppGbb/spec2cloud)
-            - [Workflow Guide](https://github.com/EmeaAppGbb/spec2cloud/blob/main/SPEC2CLOUD.md)
+            - [Integration Guide](https://github.com/henrybravo/spec2cloud-agentskills/blob/main/INTEGRATION.md)
+            - [Full Documentation](https://github.com/henrybravo/spec2cloud-agentskills)
+            - [Workflow Guide](https://github.com/henrybravo/spec2cloud-agentskills/blob/main/SPEC2CLOUD.md)
             
             ### 🆕 What's New
             
-            See the [CHANGELOG](https://github.com/EmeaAppGbb/spec2cloud/blob/main/CHANGELOG.md) for details.
+            See the [CHANGELOG](https://github.com/henrybravo/spec2cloud-agentskills/blob/main/CHANGELOG.md) for details.
           files: |
             spec2cloud-full-${{ steps.version.outputs.VERSION }}.zip
             spec2cloud-minimal-${{ steps.version.outputs.VERSION }}.zip

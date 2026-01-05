@@ -20,7 +20,7 @@ Before implementing, read:
 - `specs/prd.md` - Product Requirements Document
 - `specs/features/*.md` - Relevant Feature Requirements
 - `specs/tasks/*.md` - Task specifications
-- `AGENTS.md` - Development standards and guidelines
+- `specs/adr/*.md` - Architecture decisions and development standards
 
 ## Implementation Workflow
 
@@ -49,7 +49,7 @@ Use available documentation sources:
 
 ### 5. Implement the Code
 Follow team standards:
-- Coding standards from `AGENTS.md`
+- Coding standards from ADRs (`specs/adr/`)
 - Architectural patterns defined in the project
 - Type-safety requirements
 - Modular, self-contained design
@@ -87,7 +87,7 @@ Before marking complete:
 - ✅ Linters and formatters pass
 - ✅ Documentation updated
 - ✅ No secrets committed
-- ✅ Code follows AGENTS.md standards
+- ✅ Code follows ADR standards (`specs/adr/`)
 - ✅ UI integration verified (frontend)
 
 ## Critical Rules

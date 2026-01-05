@@ -20,9 +20,8 @@ This skill guides deployment of applications to Azure using modern best practice
 Before deploying, read and analyze:
 1. `specs/prd.md` - Product requirements to understand application needs
 2. `specs/features/*.md` - Feature requirements
-3. `AGENTS.md` - Technology stack and architectural decisions
-4. `specs/adr/*.md` - Architecture Decision Records
-5. Codebase structure (`src/backend`, `src/frontend`, etc.)
+3. `specs/adr/*.md` - Architecture decisions and technology stack
+4. Codebase structure (`src/backend`, `src/frontend`, etc.)
 
 ## Deployment Workflow
 
@@ -260,8 +259,8 @@ After deployment:
 
 ## Templates
 
-See `templates/azure-deployment-template.md` for infrastructure templates.
+See `templates/bicep-template.md` and `templates/github-actions-template.md` for infrastructure templates.
 
 ## Sample Output
 
-See `examples/sample-azure-deployment.md` for a complete deployment example.
+See `examples/sample-azure-yaml.md` for a complete deployment example.

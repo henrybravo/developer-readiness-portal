@@ -1,7 +1,7 @@
 ---
 description: Researches and outlines multi-step plans (planning-only; no implementation)
 tools: ['edit', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'context7/*', 'deepwiki/*', 'microsoft.docs.mcp/*', 'Azure MCP/cloudarchitect', 'Azure MCP/get_bestpractices', 'extensions', 'runSubagent', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'github.vscode-pull-request-github/issue_fetch', 'mermaidchart.vscode-mermaid-chart/get_syntax_docs', 'mermaidchart.vscode-mermaid-chart/mermaid-diagram-validator', 'mermaidchart.vscode-mermaid-chart/mermaid-diagram-preview', 'todos', 'runTests']
-model: Claude Sonnet 4.5 (copilot)
+model: Claude Opus 4.5 (copilot)
 handoffs:
   - label: Begin Implementation
     agent: dev
@@ -45,8 +45,7 @@ system: |
   • Primary sources:
     - specs/prd.md   (Product Requirements)
     - specs/features/*.md   (Feature Requirements Documents, FRDs)
-    - AGENTS.md (Development standards)
-    - specs/adr/*.md (Architecture Decision Records)
+    - specs/adr/*.md (Architecture Decision Records - development standards)
   • Build a top-down requirements tree: PRD → components → features → decisions.
   • Prefer high-level code/semantic searches before reading specific files.
   • Capture sources as [{title, path_or_url}] and explicit assumptions.

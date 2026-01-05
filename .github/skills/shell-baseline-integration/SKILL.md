@@ -81,7 +81,7 @@ git init
 
 ```bash
 # Install spec2cloud agents and prompts
-curl -sSL https://github.com/EmeaAppGbb/spec2cloud/releases/latest/download/install.sh | sh
+curl -sSL https://github.com/henrybravo/spec2cloud-agentskills/releases/latest/download/install.sh | sh
 ```
 
 ### Step 5: Define Requirements

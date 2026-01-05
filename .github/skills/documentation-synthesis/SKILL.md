@@ -144,8 +144,8 @@ docs/
 
 ### Code Examples
 
-```markdown
-<!-- Good: Complete, runnable example -->
+Good: Complete, runnable example
+
 ```python
 from myapp import Client
 
@@ -154,10 +154,10 @@ result = client.process(data={"name": "test"})
 print(result.status)  # Output: "success"
 ```
 
-<!-- Bad: Incomplete snippet -->
+Bad: Incomplete snippet
+
 ```python
 client.process(data)
-```
 ```
 
 ### Diagrams

@@ -76,7 +76,7 @@ This task depends on:
 
 ### Technical Constraints
 
-- Follow coding standards in `AGENTS.md`
+- Follow coding standards in ADRs (`specs/adr/`)
 - Use MediatR for CQRS pattern (separate commands and queries)
 - Use FluentValidation for input validation
 - Use specification pattern for query filtering
@@ -134,7 +134,7 @@ paths:
 | PRD | [specs/prd.md](../specs/prd.md) |
 | FRD | [specs/features/task-management.md](../specs/features/task-management.md) |
 | Task Spec | [specs/tasks/021-task-task-crud-api.md](../specs/tasks/021-task-task-crud-api.md) |
-| Standards | [AGENTS.md](../AGENTS.md) |
+| ADRs | [specs/adr/](../specs/adr/) |
 | ADR-0005 | [specs/adr/0005-database-choice.md](../specs/adr/0005-database-choice.md) |
 
 ### Labels

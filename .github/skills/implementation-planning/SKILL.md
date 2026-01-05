@@ -29,15 +29,14 @@ This skill creates detailed, multi-level implementation plans that break down fe
 Read the following before planning:
 - `specs/prd.md` - Product Requirements Document
 - `specs/features/*.md` - Feature Requirements Documents
-- `AGENTS.md` - Development standards and guidelines
-- `specs/adr/*.md` - Architecture Decision Records
+- `specs/adr/*.md` - Architecture Decision Records (development standards)
 
 ## Workflow
 
 ### 1. Context Gathering (Read-Only)
 - Read PRD for overall product vision
 - Read FRDs for specific feature details
-- Read AGENTS.md for development standards
+- Read ADRs (`specs/adr/`) for development standards
 - Build requirements tree: PRD → components → features → decisions
 
 ### 2. Identify Scaffolding Tasks First
@@ -70,7 +69,7 @@ Create task files in `specs/tasks/`:
 ## Output Format
 
 ### Human Plan (Markdown)
-```markdown
+
 ## Plan: {Title}
 {TL;DR (20-100 words)}
 
@@ -83,7 +82,6 @@ Create task files in `specs/tasks/`:
 
 **Diagrams:**
 [Mermaid diagrams for L0, L1, L2, L3]
-```
 
 ### Machine Plan (JSON)
 ```json

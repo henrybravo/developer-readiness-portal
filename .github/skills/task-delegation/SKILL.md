@@ -39,7 +39,7 @@ Use the GitHub MCP server to create an issue with:
 - Full task description from task file
 - Link to relevant FRD in `specs/features/`
 - Link to PRD in `specs/prd.md`
-- Reference to `AGENTS.md` for coding standards
+- Reference to ADRs (`specs/adr/`) for coding standards
 - List of dependencies (tasks that must be completed first)
 - Detailed acceptance criteria
 - Testing requirements (≥85% coverage)
@@ -62,7 +62,6 @@ Once the issue is created:
 
 ## Issue Template
 
-```markdown
 ## Description
 [Full task description]
 
@@ -85,9 +84,8 @@ Once the issue is created:
 ## References
 - PRD: [specs/prd.md](../specs/prd.md)
 - FRD: [specs/features/xxx.md](../specs/features/xxx.md)
-- Standards: [AGENTS.md](../AGENTS.md)
+- ADRs: [specs/adr/](../specs/adr/) (development standards)
 - Task: [specs/tasks/xxx.md](../specs/tasks/xxx.md)
-```
 
 ## Quality Checklist
 
@@ -96,7 +94,7 @@ Before delegating, verify:
 - ✅ All dependencies are documented
 - ✅ Acceptance criteria are clear and testable
 - ✅ Testing requirements are specified
-- ✅ Links to PRD, FRD, and AGENTS.md are included
+- ✅ Links to PRD, FRD, and ADRs are included
 - ✅ Task file updated with issue link
 - ✅ Issue assigned to GitHub Copilot
 

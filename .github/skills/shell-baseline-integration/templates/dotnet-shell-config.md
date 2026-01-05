@@ -187,7 +187,7 @@ dotnet run --project src/AppHost
 
 1. Install spec2cloud: `curl -sSL .../install.sh | sh`
 2. Create PRD: Use `/prd` command
-3. Generate AGENTS.md: Use `/generate-agents`
+3. Create ADRs: Use `/adr` command for architecture decisions
 4. Start implementing features
 
 ---

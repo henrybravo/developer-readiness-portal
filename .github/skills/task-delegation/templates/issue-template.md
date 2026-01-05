@@ -55,7 +55,7 @@ This task depends on:
 
 ### Technical Constraints
 
-- Follow coding standards in `AGENTS.md`
+- Follow coding standards in ADRs (`specs/adr/`)
 - Use existing patterns from the codebase
 - [Any specific architectural constraints]
 - [Any specific library/framework requirements]
@@ -67,7 +67,7 @@ This task depends on:
 | PRD | [specs/prd.md](../specs/prd.md) |
 | FRD | [specs/features/xxx.md](../specs/features/xxx.md) |
 | Task Spec | [specs/tasks/xxx.md](../specs/tasks/xxx.md) |
-| Standards | [AGENTS.md](../AGENTS.md) |
+| ADRs | [specs/adr/](../specs/adr/) |
 | ADR | [specs/adr/xxxx-xxx.md](../specs/adr/xxxx-xxx.md) |
 
 ### Labels
