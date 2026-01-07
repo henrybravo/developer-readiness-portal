@@ -24,6 +24,17 @@ export default defineConfig({
       strict: false
     }
   },
+  preview: {
+    port: 4173,
+    host: '0.0.0.0',
+    strictPort: true,
+    proxy: {
+      '/api': {
+        target: 'http://backend:5000',
+        changeOrigin: true
+      }
+    }
+  },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react/jsx-runtime', 'react-router-dom', 'axios', 'prop-types'],
     esbuildOptions: {

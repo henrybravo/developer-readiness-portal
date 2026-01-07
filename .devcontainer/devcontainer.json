@@ -47,7 +47,7 @@
 	},
 
 	// Install APM CLI after container creation
-	"postCreateCommand": "pip install --user apm-cli && apm --version",
+	//"postCreateCommand": "pip install --user apm-cli && apm --version",
 
 	// Pass through GitHub tokens from local environment
 	"remoteEnv": {
