@@ -34,6 +34,7 @@ This skill enables testing the application through two complementary approaches:
 
 ### Regression Tests (8 tests)
 - **REG-001**: Empty teams state renders correctly
+- **REG-002**: API error shows error message with retry
 - **REG-003**: Cancel reverts unsaved changes
 - **REG-004**: Skeleton loader visible during loading
 - **REG-005**: Progress bar accuracy

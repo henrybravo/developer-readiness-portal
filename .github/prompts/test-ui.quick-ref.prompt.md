@@ -99,6 +99,7 @@ cd frontend && npm run preview
 
 **Regression Tests** (Edge cases)
 - REG-001: Empty state
+- REG-002: API errors
 - REG-003: Cancel operation
 - REG-004: Loading states
 - REG-005: Progress bar
@@ -113,7 +114,7 @@ cd frontend && npm run preview
 | `.github/agents/test-ui.agent.md` | Agent definition |
 | `.github/prompts/test-ui.prompt.md` | Prompt reference |
 | `.github/skills/ui-testing/SKILL.md` | Skill details |
-| `.github/mcp/playwright.json` | MCP config |
+| `.vscode/mcp.json` | MCP config |
 | `docs/test-manual.md` | Full guide |
 | `docs/TEST-UI-SETUP.md` | Setup guide |
 

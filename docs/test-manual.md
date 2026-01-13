@@ -67,11 +67,11 @@ graph TB
 
 ### Prerequisites
 ```bash
-# Terminal 1: Backend running on :5000
-cd backend && dotnet run
+# Start both containers (frontend:4173, backend:5000)
+docker compose up -d --build
 
-# Terminal 2: Frontend preview on :4173
-cd frontend && npm run preview
+# When done
+docker compose down
 ```
 
 ---
@@ -93,7 +93,7 @@ Click on the first team card and tell me what checklist items are incomplete
 ```
 
 ```
-Fill in a search box with "Team Alpha" and take a screenshot
+Fill in a check box with "Team Alpha" and take a screenshot
 ```
 
 **Talking points:**

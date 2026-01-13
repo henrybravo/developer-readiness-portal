@@ -190,7 +190,7 @@ cd frontend && npm run preview
 ### Available Resources
 - Test data: `tests/ui/seed-data.json`
 - Test infrastructure: `tests/ui/`
-- MCP configuration: `.github/mcp/playwright.json`
+- MCP configuration: `.vscode/mcp.json`
 - Test manual: `docs/test-manual.md`
 
 ## Selectors Reference
@@ -243,7 +243,7 @@ Reset test data to seed state:
 ### Browser Issues
 If @playwright/mcp has issues:
 1. Verify Chromium is installed
-2. Check MCP configuration in `.github/mcp/playwright.json`
+2. Check MCP configuration in `.vscode/mcp.json`
 3. Review error messages in agent output
 
 ## Documentation
@@ -253,7 +253,7 @@ If @playwright/mcp has issues:
 - **Skill Details**: `.github/skills/ui-testing/SKILL.md`
 - **Setup Guide**: `docs/TEST-UI-SETUP.md`
 - **Framework Overview**: `docs/testing-framework.md`
-- **MCP Configuration**: `.github/mcp/playwright.json`
+- **MCP Configuration**: `.vscode/mcp.json`
 - **Test Code**: `tests/ui/`
 
 ## Related Resources

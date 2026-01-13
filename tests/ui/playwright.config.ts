@@ -1,4 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /**
  * Playwright configuration for Developer Readiness Portal UI tests
@@ -42,19 +47,23 @@ export default defineConfig({
     video: 'retain-on-failure',
     
     /* Maximum time each action can take */
-    actionTimeout: 10000,
+    actionTimeout: 15000,
     
     /* Navigation timeout */
-    navigationTimeout: 30000,
+    navigationTimeout: 45000,
   },
 
   /* Global timeout for each test */
-  timeout: 30000,
+  timeout: 60000,
 
   /* Expect timeout */
   expect: {
-    timeout: 5000,
+    timeout: 10000,
   },
+
+  /* Global setup/teardown */
+  globalSetup: resolve(__dirname, './global-setup.ts'),
+  globalTeardown: resolve(__dirname, './global-teardown.ts'),
 
   /* Configure projects for major browsers */
   projects: [

@@ -216,7 +216,7 @@ curl http://localhost:4173
 ### Issue: Browser automation not responding
 **Solution:** Check MCP configuration:
 ```
-cat .github/mcp/playwright.json
+cat .vscode/mcp.json
 ```
 
 ## Next Steps
