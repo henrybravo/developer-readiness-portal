@@ -3,7 +3,7 @@
 ## Purpose / What we’re demoing
 - Use **GitHub Copilot Chat in VS Code** with **MCP** enabled to drive the app via **Playwright MCP** (interactive browser automation).
 - Use Copilot + MCP to **run Playwright tests** (via the repo’s custom `playwright-tests` MCP server).
-- Show the “dev loop”: **run 5 tests → introduce a small break → rerun → interpret failures**.
+- (Optional) Show the “dev loop”: **run 5 tests → introduce a small break → rerun → interpret failures**.
 
 ## System Overview (Stack)
 - **Frontend:** Vite/React (`frontend\`) served at **http://localhost:4173**
@@ -16,52 +16,12 @@
   - `playwright` → `npx @playwright/mcp@latest --headless` (browser automation)
   - `playwright-tests` → `node tests\ui\mcp-server\dist\index.js` (run suites / reset data / reports)
 
-## Pre-reqs
-### Required tools
-- .NET SDK (backend runs with `dotnet run`)
-- Node.js + npm
-
-### VS Code + Copilot + MCP
-- VS Code with GitHub Copilot Chat access
-- MCP enabled for this workspace:
-  - `.vscode\settings.json` contains `github.copilot.chat.mcp.enabled: true`
-  - `.vscode\mcp.json` defines the MCP servers
-
-### One-time install (recommended before the demo)
-```powershell
-# Frontend deps
-cd frontend
-npm install
-
-# UI test deps + Playwright browsers
-cd ..\tests\ui
-npm install
-npx playwright install
-```
-
-### Ensure the custom MCP server is built
-Verify this file exists:
-- `tests\ui\mcp-server\dist\index.js`
-
-If it’s missing, build it:
-```powershell
-cd tests\ui\mcp-server
-npm install
-npm run build
-```
-
 ## Start the App (Two Terminals)
 
 ### Terminal A — Backend
-**Working dir:** repo root
-```powershell
-cd backend
-dotnet run
-```
 
-**Healthy looks like**
 - Console indicates the app is listening on **http://localhost:5000**
-- Quick check:
+
 ```powershell
 curl http://localhost:5000/api/teams
 ```
@@ -75,7 +35,6 @@ npm run preview
 
 **Healthy looks like**
 - Console indicates the preview server is available at **http://localhost:4173**
-- Quick check:
 ```powershell
 curl http://localhost:4173
 ```
@@ -93,17 +52,7 @@ A tight, repeatable “happy path” (60–120 seconds):
 
 ## Prepare Playwright MCP in GitHub Copilot (VS Code Copilot Chat)
 
-### What already exists (reuse it)
-- Playwright config: `tests\ui\playwright.config.ts`
-- Tests:
-  - `tests\ui\tests\smoke\teams-overview.spec.ts`
-  - `tests\ui\tests\smoke\team-details.spec.ts`
-  - `tests\ui\tests\regression\error-handling.spec.ts` (contains REG-002)
-- MCP config: `.vscode\mcp.json`
-- Copilot prompt reference: `.github\prompts\test-ui.prompt.md`
-
 ### Confirm MCP is enabled + tools are available
-1. In VS Code: Command Palette → **Developer: Reload Window**
 2. In Copilot Chat, copy/paste:
 ```
 Confirm MCP is enabled and list tools available from:
@@ -128,7 +77,11 @@ Copy/paste in Copilot Chat:
 /test-ui report summary
 ```
 
-## Run the Test Suite (5 tests)
+**Note:** `/test-ui run smoke` runs the `@smoke` tagged suite (and won’t include **REG-002** unless you also run regression/all). The CLI command below is the reproducible “source of truth” for running the **exact 5-test gate** and also works when MCP isn’t available.
+
+## (Optional) Run the Test Suite (5 tests) (CLI / exact gate)
+**Facilitator-only / fallback:** this isn’t required for the VS Code/Copilot/MCP demo, but it’s useful to prove the exact same 5-test gate can run outside Copilot (and matches CI).
+
 We’ll run **exactly five tests**: **SMOKE-001..004 + REG-002**, **Chromium only**.
 
 ### One command (recommended)

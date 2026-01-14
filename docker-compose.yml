@@ -5,9 +5,9 @@ services:
       dockerfile: Dockerfile
     container_name: nefira-frontend
     ports:
-      - "4173:4173"
+      - "4174:4173"
     environment:
-      - VITE_API_URL=/api
+      - VITE_API_URL=http://backend:5000
     depends_on:
       backend:
         condition: service_healthy
@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile
     container_name: nefira-backend
     ports:
-      - "5000:5000"
+      - "5001:5000"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:5000
