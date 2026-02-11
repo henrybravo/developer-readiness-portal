@@ -1,6 +1,6 @@
 # Nefira - Developer Readiness Portal
 
-[![Playwright Tests](https://github.com/user/developer-readiness-portal/actions/workflows/playwright.yml/badge.svg)](https://github.com/user/developer-readiness-portal/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/henrybravo/developer-readiness-portal/actions/workflows/playwright.yml/badge.svg)](https://github.com/henrybravo/developer-readiness-portal/actions/workflows/playwright.yml)
 
 ```
     _   __     ____                
@@ -82,3 +82,4 @@ See [docs/technical-stack.md](docs/technical-stack.md) for details.
 ---
 
 **Nefira** — *Clarity emerging from uncertainty* ☁️
+
