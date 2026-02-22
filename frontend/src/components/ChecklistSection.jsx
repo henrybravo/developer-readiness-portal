@@ -58,11 +58,11 @@ function ChecklistSection({ title, items, onItemToggle, categoryKey }) {
         className="w-full px-8 py-5 bg-gray-50 hover:bg-gray-100 transition-colors flex items-center justify-between"
         data-testid={`toggle-${categoryKey}`}
       >
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 pt-4 pl-4">
           <div className="text-gray-600">
             {getCategoryIcon()}
           </div>
-          <h3 className="text-xl font-bold text-gray-900">{title}</h3>
+          <h3 className="text-l font-bold text-gray-900">{title}</h3>
           <span className="text-sm font-semibold text-gray-600 bg-white px-3 py-1 rounded-full border border-gray-300">
             {completedCount}/{items.length}
           </span>

@@ -225,9 +225,9 @@ function TeamDetails() {
       )}
 
       {/* Checklist Sections */}
-      <div className="space-y-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-6 tracking-tight">Readiness Checklist</h2>
-        
+       <div className="space-y-12">
+        <h2 className="text-xl lg:text-3xl font-bold text-gray-700 mt-8 mb-4 tracking-tight">Readiness Checklist</h2>
+               
         <ChecklistSection
           title="Codebase Health"
           items={team.checklist?.codebase || []}

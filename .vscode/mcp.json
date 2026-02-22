@@ -1,34 +1,36 @@
 
 {
-  "context7": {
-    "type": "http",
-    "url": "https://mcp.context7.com/mcp"
-  },
-  "github": {
-    "type": "http",
-    "url": "https://api.githubcopilot.com/mcp/"
-  },
-  "microsoft.docs.mcp": {
-    "type": "http",
-    "url": "https://learn.microsoft.com/api/mcp"
-  },
-  "deepwiki": {
-    "type": "sse",
-    "url": "https://mcp.deepwiki.com/sse"
-  },
-  "playwright": {
-    "command": "npx",
-    "args": [
-      "@playwright/mcp@latest",
-      "--headless"
-    ]
-  },
-  "playwright-tests": {
-    "command": "node",
-    "args": [
-      "tests/ui/mcp-server/dist/index.js"
-    ],
-    "cwd": "${workspaceFolder}",
-    "env": {}
+  "servers": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "microsoft.docs.mcp": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "deepwiki": {
+      "type": "sse",
+      "url": "https://mcp.deepwiki.com/sse"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless"
+      ]
+    },
+    "playwright-tests": {
+      "command": "node",
+      "args": [
+        "tests/ui/mcp-server/dist/index.js"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {}
+    }
   }
 }
