@@ -7,7 +7,7 @@ import { chromium, expect } from '@playwright/test';
 async function globalSetup() {
   console.log('🔍 Verifying services are running...');
 
-  const baseURL = process.env.BASE_URL || 'http://localhost:4173';
+  const baseURL = process.env.BASE_URL || 'http://localhost:4174';
   const backendURL = process.env.BACKEND_URL || 'http://localhost:5000';
   const maxRetries = 30; // 30 seconds with 1s interval
   let retries = 0;

@@ -35,7 +35,7 @@ export default defineConfig({
   /* Shared settings for all the projects below */
   use: {
     /* Base URL for navigating to pages */
-    baseURL: process.env.BASE_URL || 'http://localhost:4173',
+    baseURL: process.env.BASE_URL || 'http://localhost:4174',
     
     /* Collect trace when retrying the failed test */
     trace: 'retain-on-failure',
