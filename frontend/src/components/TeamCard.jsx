@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import StatusBadge from './StatusBadge';
 import CircularProgress from './CircularProgress';
+import TechStackDisplay from './TechStackDisplay';
 import './TeamCard.css';
 
 /**
@@ -43,20 +44,11 @@ function TeamCard({ team }) {
       )}
 
       <div className="team-card__stack">
-        <div className="team-card__stack-row">
-          <span className="team-card__stack-label">Frontend</span>
-          <p className="team-card__stack-value">{team.stack?.frontend || 'N/A'}</p>
-        </div>
-        <div className="team-card__stack-row">
-          <span className="team-card__stack-label">Backend</span>
-          <p className="team-card__stack-value">{team.stack?.backend || 'N/A'}</p>
-        </div>
-        {team.stack?.database && (
-          <div className="team-card__stack-row">
-            <span className="team-card__stack-label">Database</span>
-            <p className="team-card__stack-value">{team.stack.database}</p>
-          </div>
-        )}
+        <TechStackDisplay
+          frontend={team.stack?.frontend}
+          backend={team.stack?.backend}
+          database={team.stack?.database}
+        />
       </div>
 
       <div className="team-card__footer">

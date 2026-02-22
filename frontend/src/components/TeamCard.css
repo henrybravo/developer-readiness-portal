@@ -54,21 +54,6 @@
   margin-bottom: 1.5rem;
 }
 
-.team-card__stack-row { font-size: 0.875rem; }
-
-.team-card__stack-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.team-card__stack-value {
-  font-weight: 600;
-  color: var(--color-text-primary);
-  margin-top: 0.25rem;
-}
 
 .team-card__footer {
   padding-top: 1.5rem;
