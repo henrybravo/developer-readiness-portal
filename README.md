@@ -20,6 +20,8 @@ Developer Readiness in Clear Skies
 
 A lightweight internal-facing web portal that helps software development teams assess, track, and improve their engineering readiness through simple dashboards, checklists, and automated insights.
 
+![nefira](./nefira.png)
+
 ## Quick Start
 
 ### Prerequisites
