@@ -43,6 +43,9 @@ logs/
 # Data
 data/*.json
 !data/.gitkeep
+*.md
+!README.md
+!DEMO.md
 
 # .NET
 bin/

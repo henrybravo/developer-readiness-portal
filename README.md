@@ -1,22 +1,26 @@
 # Nefira - Developer Readiness Portal
 
 [![Playwright Tests](https://github.com/henrybravo/developer-readiness-portal/actions/workflows/playwright.yml/badge.svg)](https://github.com/henrybravo/developer-readiness-portal/actions/workflows/playwright.yml)
+[![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)](https://vite.dev/)
+[![Playwright](https://img.shields.io/badge/Playwright-1.40-2EAD33?logo=playwright)](https://playwright.dev/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker)](https://www.docker.com/)
 
 ```
-    _   __     ____                
-   / | / /__  / __(_)________ _   
-  /  |/ / _ \/ /_/ / ___/ __ `/   
- / /|  /  __/ __/ / /  / /_/ /    
-/_/ |_/\___/_/ /_/_/   \__,_/     
-                                   
+███╗   ██╗███████╗███████╗██╗██████╗  █████╗
+████╗  ██║██╔════╝██╔════╝██║██╔══██╗██╔══██╗
+██╔██╗ ██║█████╗  █████╗  ██║██████╔╝███████║
+██║╚██╗██║██╔══╝  ██╔══╝  ██║██╔══██╗██╔══██║
+██║ ╚████║███████╗██║     ██║██║  ██║██║  ██║
+╚═╝  ╚═══╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+
 Developer Readiness in Clear Skies
 ```
 
 A lightweight internal-facing web portal that helps software development teams assess, track, and improve their engineering readiness through simple dashboards, checklists, and automated insights.
 
----
-
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -40,9 +44,7 @@ docker compose up -d
 # - (Optional) Redis: localhost:6379
 ```
 
----
-
-## 📋 Features
+## Features
 
 - **Teams Overview Dashboard** - View all development teams and their readiness status
 - **Readiness Checklists** - Track progress across six dimensions
@@ -50,9 +52,7 @@ docker compose up -d
 - **Automated Test Runner** - Execute Playwright UI tests
 - **Demo-Ready Seed Data** - Pre-populated sample teams
 
----
-
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -66,11 +66,9 @@ docker compose up -d
 └─────────────────────────────────────────────────────────┘
 ```
 
-**Technology Stack**: React 18 + .NET 8 + Docker
+**Technology Stack**: React 19 + .NET 9 + Docker
 
 See [docs/technical-stack.md](docs/technical-stack.md) for details.
-
----
 
 ## 📖 Documentation
 
@@ -79,7 +77,4 @@ See [docs/technical-stack.md](docs/technical-stack.md) for details.
 - [Architecture Decisions](specs/adr/)
 - [Implementation Plan](specs/IMPLEMENTATION_PLAN.md)
 
----
-
 **Nefira** — *Clarity emerging from uncertainty* ☁️
-
