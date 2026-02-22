@@ -1,19 +1,20 @@
 import { Link, Outlet } from 'react-router-dom';
+import './MainLayout.css';
 
 function MainLayout() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-gold text-white shadow-lg border-b-2 border-gold-dark">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
-            <div className="flex items-center space-x-4">
-              <h1 className="text-2xl font-extrabold tracking-tight">
-                <Link to="/" className="nav-brand transition-colors">Nefira Developer Readiness Portal</Link>
+    <div className="layout-root">
+      <nav className="layout-nav">
+        <div className="layout-nav-inner">
+          <div className="layout-nav-row">
+            <div className="layout-brand-wrap">
+              <h1 className="layout-brand">
+                <Link to="/" className="nav-brand">Nefira Developer Readiness Portal</Link>
               </h1>
-              <div className="flex space-x-2">
+              <div className="layout-nav-links">
                 <Link
                   to="/"
-                  className="nav-link px-4 py-2 rounded-md hover:bg-gold-dark transition-colors font-medium"
+                  className="layout-nav-link"
                 >
                   Teams
                 </Link>
@@ -23,14 +24,14 @@ function MainLayout() {
         </div>
       </nav>
 
-      <main className="container mx-auto px-4 py-12 lg:py-16 max-w-7xl bg-pattern">
+      <main className="layout-main bg-pattern">
         <Outlet />
       </main>
 
-      <footer className="bg-gray-800 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-base font-medium">Nefira Developer Readiness Portal v1.0.0</p>
-          <p className="text-sm text-gray-400 mt-2">Empowering development teams for success</p>
+      <footer className="layout-footer">
+        <div className="layout-footer-inner">
+          <p>Nefira Developer Readiness Portal v1.0.0</p>
+          <p className="layout-footer-sub">Empowering development teams for success</p>
         </div>
       </footer>
     </div>
