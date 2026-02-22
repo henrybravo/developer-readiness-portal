@@ -22,18 +22,19 @@ A lightweight internal-facing web portal that helps software development teams a
 
 ![nefira](./nefira.png)
 
+This a demo project to demonstrate the Microsoft Spec2Cloud SDD engineering approach and to demonstrate frontend application testing using GitHub Copilot Agents and MCP tooling (Playwright).
+
 ## Quick Start
 
 ### Prerequisites
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
-- [Git](https://git-scm.com/) installed
+- [Docker](https://www.docker.com/products/docker-desktop/) installed and running to run locally
 
 ### Start the Application
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/henrybravo/developer-readiness-portal.git
 cd developer-readiness-portal
 
 # Start all services
