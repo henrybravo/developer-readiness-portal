@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './ScrollToTop.css';
 
 /**
  * Scroll-to-top button component
@@ -33,12 +34,10 @@ function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-8 right-8 z-40 p-3 bg-gold text-white rounded-full shadow-lg hover:bg-gold-dark transition-all duration-300 transform hover:scale-110 active:scale-95"
+      className="scroll-to-top"
       aria-label="Scroll to top"
     >
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-      </svg>
+      <i className="fa-solid fa-chevron-up" aria-hidden="true"></i>
     </button>
   );
 }
