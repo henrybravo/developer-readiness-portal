@@ -31,7 +31,7 @@ function TeamsOverview() {
     return (
       <div>
         <div className="mb-12">
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 tracking-tight">Development Teams</h1>
+          <h1 className="text-2xl lg:text-3xl font-bold text-gray-700 mb-3 tracking-tight">Development Teams</h1>
           <p className="text-lg text-gray-600 leading-relaxed">
             Overview of all development teams and their readiness status
           </p>
@@ -67,7 +67,7 @@ function TeamsOverview() {
     <div>
       <ScrollToTop />
       <div className="mb-12">
-        <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-3 tracking-tight">Development Teams</h1>
+        <h1 className="text-2xl lg:text-3xl font-bold text-gray-700 mb-3 tracking-tight">Development Teams</h1>
         <p className="text-lg text-gray-600 leading-relaxed">
           Overview of all development teams and their readiness status
         </p>
