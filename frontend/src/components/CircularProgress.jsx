@@ -1,3 +1,4 @@
+import './CircularProgress.css';
 import PropTypes from 'prop-types';
 
 /**
@@ -10,36 +11,22 @@ function CircularProgress({ percentage, size = 'md' }) {
     return { from: '#ef4444', to: '#dc2626' }; // red gradient
   };
 
-  const heightClasses = {
-    sm: 'h-2',
-    md: 'h-3',
-    lg: 'h-4'
-  };
-
-  const textSizeClasses = {
-    sm: 'text-xs',
-    md: 'text-sm',
-    lg: 'text-base'
-  };
-
   const gradient = getGradientColors();
 
   return (
-    <div className="w-full">
-      {/* Progress bar */}
-      <div className={`w-full bg-gray-200 rounded-full ${heightClasses[size]} overflow-hidden mb-2`}>
-        <div 
-          className={`${heightClasses[size]} rounded-full transition-all duration-500 ease-out`}
-          style={{ 
+    <div className="progress-bar">
+      <div className="progress-bar-track" data-size={size}>
+        <div
+          className="progress-bar-fill"
+          style={{
             width: `${percentage}%`,
             background: `linear-gradient(to right, ${gradient.from}, ${gradient.to})`
           }}
         />
       </div>
-      
-      {/* Percentage label */}
-      <div className="flex justify-between items-center">
-        <span className={`${textSizeClasses[size]} font-semibold text-gray-900`}>
+
+      <div className="progress-footer">
+        <span className="progress-label" data-size={size}>
           {percentage}% Complete
         </span>
       </div>
