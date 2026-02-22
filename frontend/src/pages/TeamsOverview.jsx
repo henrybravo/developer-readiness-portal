@@ -3,6 +3,7 @@ import { teamService } from '../services/api';
 import TeamCard from '../components/TeamCard';
 import { SkeletonGrid } from '../components/SkeletonLoader';
 import ScrollToTop from '../components/ScrollToTop';
+import './TeamsOverview.css';
 
 function TeamsOverview() {
   const [teams, setTeams] = useState([]);
@@ -30,9 +31,9 @@ function TeamsOverview() {
   if (loading) {
     return (
       <div>
-        <div className="mb-12">
-          <h1 className="text-xl lg:text-3xl font-bold text-gray-700 mb-3 tracking-tight">Development Teams</h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
+        <div className="teams-header">
+          <h1 className="teams-title">Development Teams</h1>
+          <p className="teams-subtitle">
             Overview of all development teams and their readiness status
           </p>
         </div>
@@ -43,17 +44,15 @@ function TeamsOverview() {
 
   if (error) {
     return (
-      <div className="bg-red-50 border border-red-200 rounded-lg p-8" data-testid="error-container">
-        <div className="flex items-start">
-          <svg className="w-6 h-6 text-red-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+      <div className="teams-error" data-testid="error-container">
+        <div className="teams-error__body">
+          <i className="fa-solid fa-circle-exclamation teams-error__icon" aria-hidden="true"></i>
           <div>
-            <h3 className="text-lg text-red-800 font-bold mb-2">Error loading teams</h3>
-            <p className="text-red-700 mb-4">{error}</p>
+            <h3 className="teams-error__title">Error loading teams</h3>
+            <p className="teams-error__message">{error}</p>
             <button
               onClick={loadTeams}
-              className="px-6 py-2.5 bg-red-600 text-white font-medium rounded-md hover:bg-red-700 transition-colors"
+              className="btn-retry"
             >
               Retry
             </button>
@@ -66,37 +65,35 @@ function TeamsOverview() {
   return (
     <div>
       <ScrollToTop />
-      <div className="mb-12">
-        <h1 className="text-xl lg:text-3xl font-bold text-gray-700 mb-3 tracking-tight">Development Teams</h1>
-        <p className="text-lg text-gray-600 leading-relaxed">
+      <div className="teams-header">
+        <h1 className="teams-title">Development Teams</h1>
+        <p className="teams-subtitle">
           Overview of all development teams and their readiness status
         </p>
       </div>
 
       {teams.length === 0 ? (
-        <div className="text-center py-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border-2 border-dashed border-gray-300 shadow-sm" data-testid="empty-state">
-          <div className="inline-block p-4 bg-white rounded-full mb-6 shadow-sm">
-            <svg className="h-16 w-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
+        <div className="teams-empty" data-testid="empty-state">
+          <div className="teams-empty__icon-wrap">
+            <i className="fa-solid fa-users teams-empty__icon" aria-hidden="true"></i>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">No teams yet</h3>
-          <p className="text-gray-600 mb-6">Get started by adding your first development team</p>
-          <button className="px-6 py-2.5 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors shadow-md">
+          <h3 className="teams-empty__title">No teams yet</h3>
+          <p className="teams-empty__subtitle">Get started by adding your first development team</p>
+          <button className="btn-add-team">
             Add Team
           </button>
         </div>
       ) : (
         <>
-          <div className="bg-white rounded-3xl border border-gray-200 shadow-sm p-4 lg:p-6" data-testid="teams-container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8" data-testid="teams-grid">
+          <div className="teams-container" data-testid="teams-container">
+            <div className="teams-grid" data-testid="teams-grid">
               {teams.map((team) => (
                 <TeamCard key={team.id} team={team} />
               ))}
             </div>
-            
-            <div className="mt-10 text-center">
-              <p className="inline-block bg-gray-50 px-6 py-3 rounded-xl border border-gray-200 text-sm font-medium text-gray-700">
+
+            <div className="teams-count-wrap">
+              <p className="teams-count">
                 Showing {teams.length} {teams.length === 1 ? 'team' : 'teams'}
               </p>
             </div>
