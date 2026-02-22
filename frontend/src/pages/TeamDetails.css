@@ -89,17 +89,17 @@
 .btn-back__icon { font-size: 1rem; }
 
 .team-detail-title {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--color-text-primary);
   margin-bottom: 1rem;
   letter-spacing: -0.025em;
   line-height: 1.1;
 }
-@media (min-width: 1024px) { .team-detail-title { font-size: 3rem; } }
+@media (min-width: 1024px) { .team-detail-title { font-size: 1.25rem; } }
 
 .team-detail-description {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--color-text-secondary);
   line-height: 1.625;
 }
@@ -217,15 +217,15 @@
 .team-checklist {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .team-checklist__title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #374151;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
   letter-spacing: -0.025em;
 }
-@media (min-width: 1024px) { .team-checklist__title { font-size: 1.875rem; } }
+@media (min-width: 1024px) { .team-checklist__title { font-size: 1.2rem; } }
