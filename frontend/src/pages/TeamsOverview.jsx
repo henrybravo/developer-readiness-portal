@@ -32,7 +32,10 @@ function TeamsOverview() {
     return (
       <div>
         <div className="teams-header">
-          <h1 className="teams-title">Development Teams</h1>
+          <h1 className="teams-title">
+            <i className="fa-solid fa-layer-group teams-title__icon" aria-hidden="true"></i>
+            Development Teams
+          </h1>
           <p className="teams-subtitle">
             Overview of all development teams and their readiness status
           </p>
@@ -66,7 +69,10 @@ function TeamsOverview() {
     <div>
       <ScrollToTop />
       <div className="teams-header">
-        <h1 className="teams-title">Development Teams</h1>
+        <h1 className="teams-title">
+          <i className="fa-solid fa-layer-group teams-title__icon" aria-hidden="true"></i>
+          Development Teams
+        </h1>
         <p className="teams-subtitle">
           Overview of all development teams and their readiness status
         </p>
@@ -94,6 +100,7 @@ function TeamsOverview() {
 
             <div className="teams-count-wrap">
               <p className="teams-count">
+                <i className="fa-solid fa-check teams-count__icon" aria-hidden="true"></i>
                 Showing {teams.length} {teams.length === 1 ? 'team' : 'teams'}
               </p>
             </div>
